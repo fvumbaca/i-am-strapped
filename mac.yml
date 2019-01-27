@@ -1,19 +1,6 @@
 strapped:
   repo: https://raw.githubusercontent.com/azohra/strapped/master/straps
 
-git:
-  clone:
-    - { repo: git@github.com:fvumbaca/i-am-strapped.git,     folder: ~/strapped }
-
-bash:
-  mkdir:
-    - { dir: ~/Dev }
-    - { dir: ~/Library/Application\ Support/Code/User }
-  ln:
-    - { target: ~/strapped/config/.gitconfig, name: ~/.gitconfig, symbolic: true }
-    - { target: ~/strapped/config/.gitignore, name: ~/.gitignore, symbolic: true }
-    - { target: ~/strapped/config/settings.json, name: ~/Library/Application\ Support/Code/User/settings.json, symbolic: true }
-
 brew:
   taps:
     - { name: azohra/tools } 
@@ -64,35 +51,16 @@ brew:
 
 dockutil:
   apps:
-    - { name: Chrome,             pos: 1, path: "/Applications/Google Chrome.app" }
-    - { name: Slack,              pos: 2, path: "/Applications/Slack.app" }
-    - { name: Spotify,            pos: 3, path: "/Applications/Spotify.app" }
-    - { name: iTerm,           pos: 4, path: "/Applications/Utilities/iTerm.app" }
-    - { name: Visual Studio Code, pos: 5, path: "/Applications/Visual Studio Code.app" }
-    - { name: Microsoft Outlook,  pos: 6, path: "/Applications/Microsoft Outlook.app" }
+    - { name: Chrome,             pos: 1,     path: "/Applications/Google Chrome.app" }
+    - { name: Slack,              pos: 2,     path: "/Applications/Slack.app" }
+    - { name: Spotify,            pos: 3,     path: "/Applications/Spotify.app" }
+    - { name: iTerm,              pos: 4,     path: "/Applications/Utilities/iTerm.app" }
+    - { name: Visual Studio Code, pos: 5,     path: "/Applications/Visual Studio Code.app" }
+    - { name: Microsoft Outlook,  pos: 6,     path: "/Applications/Microsoft Outlook.app" }
   dirs:
     - { path: "~/Downloads",      view: fan, display: stack, sort: dateadded }
     - { path: "~/Documents",      view: fan, display: stack, sort: dateadded }
     - { path: "~/Pictures",       view: fan, display: stack, sort: dateadded }
-
-npm:
-  packages:
-    - { name: lodash }
-    - { name: request }
-    - { name: express }
-    - { name: async }
-    - { name: debug }
-    - { name: semver }
-    - { name: gulp }
-
-pip3:
-  packages:
-    - { name: NumPy }
-    - { name: Pygame }
-    - { name: Django }
-    - { name: matplotlib }
-    - { name: Requests }
-    - { name: Scrapy }
 
 visual_studio_code:
   extensions:
@@ -117,3 +85,19 @@ visual_studio_code:
     - { name: mauve.terraform }
     - { name: vscodevim.vim }
     - { name: fabiospampinato.vscode-todo-plus }
+
+git:
+  clone:
+    - { repo: git@github.com:fvumbaca/i-am-strapped.git,     folder: ~/strapped }
+
+bash:
+  mkdir:
+    - { dir: ~/Dev }
+    - { dir: ~/Library/Application\ Support/Code/User }
+  ln:
+    - { target: ~/strapped/config/.gitconfig,     name: ~/.gitconfig,                                           symbolic: true }
+    - { target: ~/strapped/config/.gitignore,     name: ~/.gitignore,                                           symbolic: true }
+    - { target: ~/strapped/config/settings.json,  name: ~/Library/Application\ Support/Code/User/settings.json, symbolic: true }
+    - { target: ~/strapped/config/.vimrc,         name: ~/.vimrc,                                               symbolic: true }
+    - { target: ~/strapped/config/.tmux.conf,     name: ~/.tmux.conf,                                           symbolic: true }
+
