@@ -1,3 +1,4 @@
+
 " Some great resources:
 " https://www.youtube.com/watch?v=XA2WjJbmmoM
 " https://github.com/changemewtf/no_plugins/blob/master/no_plugins.vim
@@ -72,9 +73,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'flazz/vim-colorschemes'
 
 " Lightline
-Plug 'itchyny/lightline.vim'
-set laststatus=2
-let g:lightline = { 'colorscheme': 'seoul256' }
+" Plug 'itchyny/lightline.vim'
+" set laststatus=2
+" let g:lightline = { 'colorscheme': 'seoul256' }
+
+" Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Nerd tree stuff
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
