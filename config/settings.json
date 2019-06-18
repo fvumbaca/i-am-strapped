@@ -3,7 +3,6 @@
     "editor.fontSize": 14,
     "editor.wordWrap": "off",
     "editor.minimap.enabled": true,
-    "editor.formatOnPaste": false,
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/*.pyc": true
@@ -40,5 +39,7 @@
     "jsAutolint.enable": true,
     "typescript.check.npmIsInstalled": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-    "terminal.integrated.shell.linux": "/usr/local/bin/bash"
+    "terminal.integrated.shell.linux": "/usr/local/bin/bash",
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true
 }

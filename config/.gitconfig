@@ -1,6 +1,7 @@
 [user]
   name = Frank Vumbaca
   email = fvumbaca@outlook.com
+	signingkey = 3AE7F0B5A1D59A22
 
 [alias]
 	c = commit -am
@@ -35,7 +36,7 @@
 
 # so much color
 [color]
-	ui = always
+	ui = true
 [color "diff"]
 	meta = yellow bold
 	commit = green bold
@@ -110,3 +111,5 @@
 	showPatch = true
 [log]
 	date = relative
+[gpg]
+	program = /usr/local/bin/gpg
