@@ -94,10 +94,13 @@ bash:
   mkdir:
     - { dir: ~/Dev }
     - { dir: ~/Library/Application\ Support/Code/User }
+    - { dir: ~/.emacs.d }
   ln:
     - { target: ~/strapped/config/.gitconfig,     name: ~/.gitconfig,                                           symbolic: true }
     - { target: ~/strapped/config/.gitignore,     name: ~/.gitignore,                                           symbolic: true }
     - { target: ~/strapped/config/settings.json,  name: ~/Library/Application\ Support/Code/User/settings.json, symbolic: true }
     - { target: ~/strapped/config/.vimrc,         name: ~/.vimrc,                                               symbolic: true }
     - { target: ~/strapped/config/.tmux.conf,     name: ~/.tmux.conf,                                           symbolic: true }
+    - { target: ~/strapped/config/emacs.org,      name: ~/.emacs.d/config.org,                                  symbolic: true }
+    - { target: ~/strapped/config/emacs_init.el,  name: ~/.emacs.d/init.el,                                     symbolic: true }
 
