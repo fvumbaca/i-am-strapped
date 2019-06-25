@@ -28,6 +28,7 @@ brew:
     - { name: readline,        upgrade: true } 
     - { name: terraform,       upgrade: true } 
     - { name: shellcheck,      upgrade: true }
+    - { name: emacs,           upgrade: true }
 
   casks:
     - { name: 1password,                         upgrade: true }   
@@ -47,6 +48,8 @@ brew:
     - { name: docker,                            upgrade: true }                    
     - { name: google-chrome,                     upgrade: true }                   
     - { name: spotify,                           upgrade: true }
+    - { name: emacs,                             upgrade: true }
+    - { name: megasync,                          upgrade: true }
 
 
 dockutil:
@@ -55,30 +58,24 @@ dockutil:
     - { name: Slack,              pos: 2,     path: "/Applications/Slack.app" }
     - { name: Spotify,            pos: 3,     path: "/Applications/Spotify.app" }
     - { name: iTerm,              pos: 4,     path: "/Applications/Utilities/iTerm.app" }
-    - { name: Visual Studio Code, pos: 5,     path: "/Applications/Visual Studio Code.app" }
-    - { name: Microsoft Outlook,  pos: 6,     path: "/Applications/Microsoft Outlook.app" }
+    - { name: Microsoft Outlook,  pos: 5,     path: "/Applications/Microsoft Outlook.app" }
   dirs:
     - { path: "~/Downloads",      view: fan, display: stack, sort: dateadded }
     - { path: "~/Documents",      view: fan, display: stack, sort: dateadded }
-    - { path: "~/Pictures",       view: fan, display: stack, sort: dateadded }
 
 visual_studio_code:
   extensions:
     - { name: teabyii.ayu }
     - { name: davidanson.vscode-markdownlint }
     - { name: zignd.html-css-class-completion }
-    - { name: ms-vscode.cpptools }
     - { name: mjmcloug.vscode-elixir }
     - { name: zhuangtongfa.material-theme}
     - { name: PKief.material-icon-theme }
     - { name: PeterJausovec.vscode-docker }
     - { name: dbaeumer.vscode-eslint }
     - { name: xabikos.javascriptsnippets }
-    - { name: formulahendry.code-runner }
     - { name: alefragnani.project-manager }
     - { name: eamodio.gitlens }
-    - { name: humao.rest-client }
-    - { name: rebornix.ruby }
     - { name: CoenraadS.bracket-pair-colorizer } 
     - { name: cstuder.gitlab-ci-validator }
     - { name: pgourlain.erlang }
@@ -89,6 +86,7 @@ visual_studio_code:
 git:
   clone:
     - { repo: git@github.com:fvumbaca/i-am-strapped.git,     folder: ~/strapped }
+    - { repo: git@github.com:fvumbaca/emacs.d.git,           folder: ~/.emacs.d }
 
 bash:
   mkdir:
